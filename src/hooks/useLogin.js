@@ -33,6 +33,8 @@ export const useLogin = () => {
       }
     }
   };
+
+  // clean up function
   useEffect(() => {
     return () => setIsCancelled(true);
   }, []);
